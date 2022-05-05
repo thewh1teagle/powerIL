@@ -58,8 +58,8 @@ function App() {
         <Box
           sx={{
             backgroundColor: 'white', width: { xs: '90%', md: '50%' },
-            minHeight: { xs: '70vh', md: '75vh' }, margin: 'auto', marginTop: '70px',
-            padding: '20px', borderRadius: '25px', boxShadow: '0 0 1px 1px'
+            minHeight: { xs: '83vh', sm: '75vh' }, margin: 'auto', marginTop: '70px',
+            padding: '20px', borderRadius: '25px', border: '2px solid rgba(0, 0, 0, 0.12)'
           }}
         >
           <Typography
@@ -84,7 +84,7 @@ function App() {
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 value={consumeType}
-                label="Age"
+                label="סוג צריכה"
                 onChange={handleSelect}
                 InputLabelProps={{ style: { fontSize: 40 } }}
               >
@@ -115,9 +115,11 @@ function App() {
             <Card title='חודש' cost={result.month} />
             <Card title='שנה' cost={result.year} />
           </Box>
-          <Typography fontSize='1.2em' textAlign='center' fontWeight='200' paddingTop='3px'>
-            חושב לפי {getLastYearCost().cost} קוט"ש נכון לשנת {getLastYearCost().year}
-          </Typography>
+          {typeof result.hour == 'number' &&
+            <Typography fontSize='1.2em' textAlign='center' fontWeight='200' paddingTop='3px'>
+              חושב לפי {getLastYearCost().cost} קוט"ש נכון לשנת {getLastYearCost().year}
+            </Typography>
+          }
         </Box>
       </ThemeProvider>
     </RTL>
