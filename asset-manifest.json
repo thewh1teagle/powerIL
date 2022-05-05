@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/powerIL/static/css/main.0d54a275.css",
+    "main.js": "/powerIL/static/js/main.2e9df27e.js",
+    "static/js/787.0d93bdcb.chunk.js": "/powerIL/static/js/787.0d93bdcb.chunk.js",
+    "index.html": "/powerIL/index.html",
+    "main.0d54a275.css.map": "/powerIL/static/css/main.0d54a275.css.map",
+    "main.2e9df27e.js.map": "/powerIL/static/js/main.2e9df27e.js.map",
+    "787.0d93bdcb.chunk.js.map": "/powerIL/static/js/787.0d93bdcb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d54a275.css",
+    "static/js/main.2e9df27e.js"
+  ]
+}
