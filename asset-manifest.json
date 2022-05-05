@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/powerIL/static/css/main.0d54a275.css",
-    "main.js": "/powerIL/static/js/main.3560cc04.js",
+    "main.js": "/powerIL/static/js/main.2bb28f34.js",
     "static/js/787.0d93bdcb.chunk.js": "/powerIL/static/js/787.0d93bdcb.chunk.js",
     "index.html": "/powerIL/index.html",
     "main.0d54a275.css.map": "/powerIL/static/css/main.0d54a275.css.map",
-    "main.3560cc04.js.map": "/powerIL/static/js/main.3560cc04.js.map",
+    "main.2bb28f34.js.map": "/powerIL/static/js/main.2bb28f34.js.map",
     "787.0d93bdcb.chunk.js.map": "/powerIL/static/js/787.0d93bdcb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0d54a275.css",
-    "static/js/main.3560cc04.js"
+    "static/js/main.2bb28f34.js"
   ]
 }
