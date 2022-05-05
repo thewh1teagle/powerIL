@@ -111,9 +111,9 @@ function App() {
             </Button>
           </Box>
           <Box sx={{ display: 'flex', gap: '15px', width: '100%', justifyContent: 'center', paddingTop: '20px' }}>
-            <Card title='שעה' result={result} />
-            <Card title='שעה' result={result} />
-            <Card title='שעה' result={result} />
+            <Card title='שעה' cost={result.hour} />
+            <Card title='חודש' cost={result.month} />
+            <Card title='שנה' cost={result.year} />
           </Box>
           <Typography fontSize='1.2em' textAlign='center' fontWeight='200' paddingTop='3px'>
             חושב לפי {getLastYearCost().cost} קוט"ש נכון לשנת {getLastYearCost().year}
