@@ -2,7 +2,7 @@ import { Typography, Card, CardContent } from '@mui/material';
 
 export default function CustomCard({ title, cost }) {
     return (
-        <Card sx={{ maxWidth: '200px', overflow: 'auto' }} variant="outlined">
+        <Card sx={{ minWidth: '80px', maxWidth: '200px', overflow: 'auto', boxShadow: typeof cost == 'number' ? '0 0 10px': 'none' }} variant="outlined">
             <CardContent>
                 <Typography sx={{ fontSize: { md: 20, sx: '1em' } }} color="text.secondary" gutterBottom textAlign="center">
                     {title}

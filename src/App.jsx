@@ -31,8 +31,8 @@ function App() {
   const [result, setResult] = useState({ hour: '-', month: '-', year: '-' })
 
   function handleSelect(e) {
+    setConsumeType(e.target.value)
     if (kvh !== '') {
-      setConsumeType(e.target.value)
       handleCalculate(e.target.value)
     }
   }
@@ -105,7 +105,7 @@ function App() {
           </Box>
           <Box sx={{ display: 'flex', justifyContent: 'center', paddingTop: '10px' }}>
             <Button
-              disabled={kvh === ''} onClick={handleCalculate} variant='contained'
+              disabled={kvh === ''} onClick={() => handleCalculate(consumeType)} variant='contained'
               style={{ margin: 'auto', fontWeight: 'bold', fontSize: '1.8em', height: '1.6em', width: '4em' }}>
               חשב
             </Button>
