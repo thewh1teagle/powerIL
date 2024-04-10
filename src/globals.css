@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Heebo Variable', sans-serif;
+}
+
+[dir="rtl"] .select {
+  background-position: calc(100% - 12px) calc(1px + 50%),
+  calc(100% + 16px) calc(1px + 50%);
+}
