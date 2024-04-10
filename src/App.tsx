@@ -47,9 +47,9 @@ function App() {
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]"></div>
       </div>
-      <div className="w-[500px] m-auto">
-        <div className="text-6xl text-center mt-10">חישוב צריכת חשמל</div>
-        <div className="flex flex-row mt-10">
+      <div className="w-[500px] max-w-[100vw] p-5 m-auto">
+        <div className="text-3xl lg:text-6xl text-center mt-10">חישוב צריכת חשמל</div>
+        <div className="flex flex-row mt-10 gap-1">
           <select
             defaultValue={measure}
             onChange={(e) => setMeasure(e.target.value as any)}
