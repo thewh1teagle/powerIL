@@ -48,7 +48,7 @@ function App() {
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]"></div>
       </div>
       <div className="w-[500px] max-w-[100vw] p-5 m-auto">
-        <div className="text-3xl lg:text-6xl text-center mt-10">חישוב צריכת חשמל</div>
+        <div className="text-3xl lg:text-4xl text-center mt-10">חישוב צריכת חשמל</div>
         <div className="flex flex-row mt-10 gap-1">
           <select
             defaultValue={measure}
