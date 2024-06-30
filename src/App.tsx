@@ -18,12 +18,12 @@ function App() {
   }
 
   const options = { minimumFractionDigits: 2, maximumFractionDigits: 2 };
-  const pricePerMonth = (pricePerHour * 30 * 24).toLocaleString("en", options);
-  const pricePerYear = (pricePerHour * 30 * 24 * 365).toLocaleString(
-    "en",
-    options
-  );
+  let pricePerMonth: string | number = (pricePerHour * 30 * 24)
+  let pricePerYear: string | number = (pricePerMonth * 12)
   pricePerHour = pricePerHour.toLocaleString("en", options);
+  pricePerMonth = pricePerMonth.toLocaleString("en", options);
+  pricePerYear = pricePerYear.toLocaleString("en", options);
+  
   const result = [
     { label: "שעה", value: pricePerHour },
     { label: "חודש", value: pricePerMonth },
